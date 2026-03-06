@@ -1,8 +1,7 @@
-# 3-Tier-Architecture-AWS
+# Architecture Diagram
+## AWS 3-Tier Architecture
 
-## Architecture Diagram
-
-![AWS 3 Tier Architecture](./architecture.png)
+![AWS 3 Tier Architecture](./images/aws-3tier-architecture.png)
 
 Project: AWS 3-Tier Highly Available Architecture (Terraform)
 
@@ -98,4 +97,59 @@ Terraform ensures that infrastructure is:
 	•	Version controlled
 	•	Easily deployable
 
-    
+Future Enhancements
+
+This project represents the foundational infrastructure layer of a scalable cloud-native application architecture. The current implementation focuses on provisioning a secure and highly available infrastructure using Terraform and core AWS services.
+
+Future iterations of this architecture will extend the platform to support containerized workloads and modern orchestration frameworks.
+
+Planned improvements include:
+
+Containerization
+
+Application services will be packaged into Docker containers to ensure consistent environments across development, testing, and production. Containerization will simplify deployment workflows and improve portability across infrastructure environments.
+
+Key benefits:
+	•	Environment consistency
+	•	Faster deployment cycles
+	•	Simplified application dependency management
+	•	Improved scalability
+
+Kubernetes Orchestration
+
+The application layer will be migrated to a Kubernetes-based container orchestration platform.
+
+Potential implementation options include:
+	•	Amazon EKS (Elastic Kubernetes Service)
+	•	Self-managed Kubernetes clusters on EC2
+
+Kubernetes will enable:
+	•	Automated container scheduling
+	•	Self-healing infrastructure
+	•	Rolling deployments and rollbacks
+	•	Horizontal pod autoscaling
+	•	Service discovery and load balancing
+
+This transition will move the architecture toward a fully cloud-native microservices platform.
+
+CI/CD Integration
+
+Future versions will also incorporate a complete CI/CD pipeline to automate the build and deployment process.
+
+Potential toolchain:
+	•	GitHub Actions or Jenkins
+	•	Docker image build pipelines
+	•	Automated Kubernetes deployments
+	•	Infrastructure validation using Terraform
+
+Observability and Monitoring
+
+Operational visibility will be enhanced through integrated monitoring and logging.
+
+Possible tools include:
+	•	Prometheus
+	•	Grafana
+	•	AWS CloudWatch
+	•	Loki for centralized logging
+
+This will provide real-time insights into infrastructure health, application performance, and system reliability.
