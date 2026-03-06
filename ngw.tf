@@ -12,9 +12,9 @@ resource "aws_nat_gateway" "nat_gateway" {
   tags          = { Name = "nat_gateway" }
 }
 
-resource "aws_nat_gateway" "nat_gateway" {
-  allocation_id = aws_eip.nat_gateway.id
-  subnet_id     = aws_subnet.public_subnet_2a.id
-  tags          = { Name = "nat_gateway" }
-}
+# resource "aws_nat_gateway" "nat_gateway" {
+#   allocation_id = aws_eip.nat_gateway.id
+#   subnet_id     = aws_subnet.public_subnet_2a.id
+#   tags          = { Name = "nat_gateway" }
+# }
 
